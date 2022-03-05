@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uranium-image-cleanup
+Version: 0.8.0a1
+Summary: Remove labels and text from grayscale uranium photos
+Author: we need a team-name :D
+Author-email: schmaltz.6@wright.edu | name.2@wright.edu
+License: MIT
+Project-URL: Source, https://github.com/brienschmaltz/uranium-image-cleanup
+Keywords: image processing filtering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+
+UNKNOWN
+

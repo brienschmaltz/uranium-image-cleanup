@@ -1,4 +1,4 @@
-from removeLabel import *
+from remove_label import *
 from email.mime import image
 from PIL import Image
 from tqdm import tqdm
@@ -40,8 +40,9 @@ def imageToCV2(images_retrieved):
         cv2.imshow("image", img)
         cv2.imshow("result", result)
 
-        #Here 
-        cv2.imwrite("D:\GITHUB\CEG-4121-Project\Mak's Work\OutputImages\result" + str(image) + ".jpg", result)
+        #Here add in nicks code or whatever he does
+        
+        #cv2.imwrite("D:\GITHUB\CEG-4121-Project\Mak's Work\OutputImages\result" + str(image) + ".jpg", result)
 
         #for laptop
         #cv2.imwrite("C:/Users/ashto/OneDrive/Desktop/CEG 6120 Managing the Software Process/Group E Project/Output Images/" + "MASK" + image, mask)

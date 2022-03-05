@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/image_cleanup/__init__.py
+src/image_cleanup/remove_label.py
+src/image_cleanup/uranium_image_cleanup.py
+src/uranium_image_cleanup.egg-info/PKG-INFO
+src/uranium_image_cleanup.egg-info/SOURCES.txt
+src/uranium_image_cleanup.egg-info/dependency_links.txt
+src/uranium_image_cleanup.egg-info/entry_points.txt
+src/uranium_image_cleanup.egg-info/requires.txt
+src/uranium_image_cleanup.egg-info/top_level.txt

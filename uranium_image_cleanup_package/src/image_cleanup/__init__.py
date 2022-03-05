@@ -1,3 +1,4 @@
 # Intialize other files and request access to their functionality. 
-from .main import *
-from .removeLabel import *
+
+from .uranium_image_cleanup import *
+from .remove_label import *
