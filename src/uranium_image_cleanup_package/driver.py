@@ -1,4 +1,4 @@
-from remove_label import *
+from .remove_label import *
 from email.mime import image
 from PIL import Image
 from tqdm import tqdm
@@ -17,7 +17,7 @@ def main(): #
     goToOutput = input("Press Y/y to Open Output Directory.")               # OPEN OUTPUT
 # ------------------------------------------------------------------- Function mainMenu() - Purpose:
 def mainMenu():                                                             # Start Program
-    print("*** Image Cleanup Tool V.1.0 ***")                               # Menu Screen
+    print("*** Uranium Image Cleanup  ***")                               # Menu Screen
 
     images_retrieved = []                                                   # Array of Images Extracted from Folder
     directoryInput = input ("Enter Image/s Retrieval Directory:")           # User Input of Retrieval Directory
