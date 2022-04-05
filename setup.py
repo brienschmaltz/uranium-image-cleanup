@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setup(name='uranium_image_cleanup',
-      #Examples of professional naming conventions
+
+      #Examples naming conventions
       #1.2.0.dev1  # Development release
       #1.2.0a1     # Alpha Release
       #1.2.0b1     # Beta Release
@@ -13,7 +13,11 @@ setup(name='uranium_image_cleanup',
       #1.2.0.post1 # Post Release
       #15.10       # Date based release
       #23          # Serial release
-      version='0.8.0a4',
+
+      #py_modules=["removeLabel"],
+
+setup(name='uranium_image_cleanup',
+      version='0.9.0b11',
       description='Remove text/noise from grayscale uranium photos',
       long_description=long_description,
       long_description_content_type="text/markdown",
@@ -34,19 +38,11 @@ setup(name='uranium_image_cleanup',
           'pillow'
       ],
       package_dir={'': 'src'},
-      py_modules=["remove_label"],
       packages=find_packages(where='src'),
       python_requires='>=2.7, <4',
-      # For example, the following would provide a command called `run_program` which
-      # executes the function `main` from this package when invoked:
-      # no idea if this is going to work?
       entry_points={  
         'console_scripts': [
-            'run_program=uranium_image_cleanup:main',
+            'uic=uic_package:main',
         ],
       },
-      #Potentially add github links
-      #Finish read me file
-      #https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-      #USE THIS
       )

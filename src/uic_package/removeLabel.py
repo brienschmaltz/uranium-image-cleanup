@@ -1,21 +1,17 @@
 import cv2 as cv2
 import numpy as np
-import time
 import glob
 import os, os.path
 import cv2 as cv2
 import numpy as np
 
-from tkinter import N
-from tkinter import Image
 from datetime import datetime
 from statistics import mode
 from tqdm import tqdm
 
-
 #  *** MAIN ***
 def main():                                     
-    print("\n*** Image Cleanup Tool V.1.0 ***")           
+    print("\n*** Uranium Image Cleanup Tool ***")           
     while(True):
         mainMenu()
 

@@ -1,2 +1,1 @@
-remove_label
-uranium_image_cleanup_package
+uic_package

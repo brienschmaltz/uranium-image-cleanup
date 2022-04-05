@@ -1,2 +1,2 @@
 [console_scripts]
-run_program = uranium_image_cleanup:main
+uic = uic_package:main

@@ -1,21 +1,55 @@
 # Uranium Image Cleanup
 --------
-To run this program, see the first use case below. 
 
- This package was designed to take in user input (a directory where images of uranium are stored), ask for an output folder and then proceed to process images in specified directory to remove text/noise. 
+ This program was designed to take in user input (a directory where images of uranium are stored), ask for an output folder and then proceed to process images in specified directory to remove text/noise only from specific grayscale uranium images.
+
+***Note:*** This program was designed to run much like an executable. We have provided use cases outside of the program running as an exectuable where user input is required.
+
+This tutorial assumes you have already installed the latest Python and have added it to your environmental path. Python will ask you for this when you install it. Check that box. 
 
 Below is an example of how our ideal user should use install and use this package (AFIT = ideal user).
 
-***Note:*** This package was designed to run our driver.py, or main(), code, much like an executable. We have provided use cases where the functionality of our package outside of running as a program that requires user input, ect... is useful. 
-
-Remember to run these in a python shell.
+On Window's start Command Prompt or PowerShell. On Linux open up a terminal. 
 
 ## To install:
 
 ```
-    >>> python3 -m pip install --index-url https://pypi.org/project/uranium_image_cleanup==version-number
+    >>> pip install uranium-image-cleanup
 ```
-## To run the program:
+
+## Run program using console script on Window's:
+
+
+```
+    >>> where uic
+    #Output: C:\Users\your_username\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.       9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts\uic.exe
+    >>>
+    #Then add location to a python3 command
+    >>> python3 C:\Users\your_username\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts\uic.exe
+    >>>
+    #Program will start
+    >>> *** Uranium Image Cleanup  ***
+    >>> Enter Image/s Retrieval Directory:
+```
+
+```
+    >>> python3 -m uic
+    >>> 
+    >>> *** Uranium Image Cleanup  ***
+    >>> Enter Image/s Retrieval Directory:
+```
+
+## Alternative way of running:
+
+On Window's start Command Prompt or PowerShell. On Linux open up a terminal. 
+
+Run python.
+
+```
+    >>> python
+```
+
+Import the package then call main().
 
 ```
     >>> import uranium_image_cleanup_package as uic
@@ -26,14 +60,14 @@ Remember to run these in a python shell.
     >>> Enter Image/s Retrieval Directory:
 ```
 
-## This package is capable of:
+## This package is also capable of:
 
 - Removing text/noise on a single image of uranium.
-- Detecting white pixels from a image.
+- Detecting white pixels on a single image.
 
 Below are examples on how to implement these.
 
-###### Use case to work on a single image:
+###### Remove labels on a single image:
 
 ``` 
     >>> import uranium_image_cleanup_package as uic
@@ -43,7 +77,7 @@ Below are examples on how to implement these.
     >>> result_image = uic.removeLabel(uranium_nucleus_10593520)
 
 ```
-###### Detect white pixels from an image:
+###### Detect white pixels on a single image:
 ``` 
     >>> import uranium_image_cleanup_package as uic
     >>> import opencv as cv2
