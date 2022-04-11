@@ -17,12 +17,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
       #py_modules=["removeLabel"],
 
 setup(name='uranium_image_cleanup',
-      version='0.9.0b11',
+      version='1.0.0',
       description='Remove text/noise from grayscale uranium photos',
       long_description=long_description,
       long_description_content_type="text/markdown",
       classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.7',
       ],
